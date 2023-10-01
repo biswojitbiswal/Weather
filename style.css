@@ -1,0 +1,330 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+body{
+    background-color: #222;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width:350px;
+    /* height:420px; */
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    align-self: center;
+    border-radius:1rem;
+    color:white;
+    text-align:center;
+}
+.search{
+    /* width:100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1.25rem;
+    position: relative;
+}
+.close 
+{
+    position:absolute;
+    color:red;
+    left:225px;
+    cursor:pointer;
+
+}
+.search input{
+    width:235px;
+    height:30px;
+    border:none;
+    outline:0;
+    border-radius: 2rem;
+    padding:.5rem;
+}
+.search button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search button img{
+    width:1rem;
+}
+.error{
+    text-align: left;
+    margin-left:1.75rem;
+    margin-top:-.5rem;
+    font-size: 14px;
+    display:none;
+}
+
+.wheather img{
+    width:100px;
+}
+.wheather h1{
+    font-size:2.5rem;
+}
+.wheather h2{
+    font-size:1.5rem;
+}
+.detail{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+}
+.detail .col{
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail .col img{
+    width:2rem;
+    height:1.75rem;
+    margin-top:.25rem;
+    margin-right:.5rem;
+}
+.detail .col .percent{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.detail .col .name{
+    font-size:.75rem;
+    font-weight:400;
+}
+.wheather{
+    display:none;
+}
+
+/* @media screen and (max-width:768px){
+    .card{
+        height:100vh;
+        width:100%;    
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        margin-top: 0;
+        border-radius:0;
+        color:white;
+        text-align:center;
+        
+    }
+    #serch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:2rem 2rem 1rem 2rem;
+        
+    }
+    .search input{
+        width:80%;
+        height:40px;
+        border:none;
+        outline:0;
+        border-radius: 2rem;
+        padding:1rem;
+        font-size: 2rem;
+    }
+    .search button{
+        width:70px;
+        height:70px;
+        border:none;
+        border-radius: 50%;
+        margin-right:.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search button img{
+        width:1.5rem;
+    }
+    .wheather img{
+        width:350px;
+    }
+    .wheather h1{
+        font-size:6.5rem;
+    }
+    .wheather h2{
+        font-size:5rem;
+    }
+    .detail .col{
+        height:300px;
+        width:250px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:.5rem;
+        margin-right:.5rem;
+        margin-top:8.5rem;
+    }
+    .detail .col img{
+        width:5rem;
+        height:5rem;
+        margin-top:2.25rem;
+        margin-right:1.5rem;
+        margin-bottom:1.5rem;
+    }
+    .detail .col .percent{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .detail .col .name{
+        font-size:1.5rem;
+        font-weight:500;
+    }
+}
+@media screen and (max-width:568px){
+    .card{
+        height:100vh;
+        width:100%;    
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        margin-top: 0;
+        border-radius:0;
+        color:white;
+        text-align:center;
+        
+    }
+    #serch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:1rem 1rem 1rem 1rem;
+        
+    }
+    .search input{
+        width:75%;
+        height:40px;
+        border:none;
+        outline:0;
+        border-radius: 2rem;
+        padding:1rem;
+        font-size: 2rem;
+    }
+    .search button{
+        width:70px;
+        height:70px;
+        border:none;
+        border-radius: 50%;
+        margin-right:.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search button img{
+        width:1.5rem;
+    }
+    .wheather img{
+        width:200px;
+    }
+    .wheather h1{
+        font-size:2.75rem;
+    }
+    .wheather h2{
+        font-size:1.75rem;
+    }
+    .detail .col{
+        height:150px;
+        width:160px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:.5rem;
+        margin-right:.5rem;
+        margin-top:5.25rem;
+    }
+    .detail .col img{
+        width:2.5rem;
+        height:2.5rem;
+        margin-top:2.25rem;
+        margin-right:.75rem;
+        margin-bottom:1.75rem;
+    }
+    .detail .col .percent{
+        font-size:1.5rem;
+        font-weight: 600;
+    }
+    .detail .col .name{
+        font-size:.75rem;
+        font-weight:500;
+    }
+}
+@media screen and (max-width:420){
+    .card{
+        height:100vh;
+        width:100%;    
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        margin-top: 0;
+        border-radius:0;
+        color:white;
+        text-align:center;
+        
+    }
+    #serch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:1rem 1rem 1rem 1rem;
+        
+    }
+    .search input{
+        width: 200px;
+        height:40px;
+        border:none;
+        outline:0;
+        border-radius: 2rem;
+        padding:1rem;
+        font-size: 2rem;
+    }
+    .search button{
+        width:70px;
+        height:70px;
+        border:none;
+        border-radius: 50%;
+        margin-right:.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search button img{
+        width:1.5rem;
+    }
+    .wheather img{
+        width:200px;
+    }
+    .wheather h1{
+        font-size:2.75rem;
+    }
+    .wheather h2{
+        font-size:1.75rem;
+    }
+    .detail .col{
+        height:150px;
+        width:160px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:.5rem;
+        margin-right:.5rem;
+        margin-top:5.25rem;
+    }
+    .detail .col img{
+        width:2.5rem;
+        height:2.5rem;
+        margin-top:2.25rem;
+        margin-right:.75rem;
+        margin-bottom:1.75rem;
+    }
+    .detail .col .percent{
+        font-size:1.5rem;
+        font-weight: 600;
+    }
+    .detail .col .name{
+        font-size:.75rem;
+        font-weight:500;
+    }
+} */
