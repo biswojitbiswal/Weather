@@ -78,6 +78,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding:2rem;
+    /* margin-top : 6rem; */
 }
 .detail .col{
     height:100px;
@@ -103,228 +104,31 @@ body{
     display:none;
 }
 
-/* @media screen and (max-width:768px){
+@media  screen and (max-width: 600px) {
     .card{
         height:100vh;
-        width:100%;    
-        background: linear-gradient(135deg, #00feba, #5b548a);
-        margin-top: 0;
-        border-radius:0;
-        color:white;
-        text-align:center;
-        
+        width:100%;
+        border-radius: 0;
     }
-    #serch{
+    .detail{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        margin:2rem 2rem 1rem 2rem;
-        
-    }
-    .search input{
-        width:80%;
-        height:40px;
-        border:none;
-        outline:0;
-        border-radius: 2rem;
-        padding:1rem;
-        font-size: 2rem;
-    }
-    .search button{
-        width:70px;
-        height:70px;
-        border:none;
-        border-radius: 50%;
-        margin-right:.75rem;
-        display: flex;
         justify-content: center;
-        align-items: center;
-    }
-    .search button img{
-        width:1.5rem;
-    }
-    .wheather img{
-        width:350px;
-    }
-    .wheather h1{
-        font-size:6.5rem;
-    }
-    .wheather h2{
-        font-size:5rem;
+        margin-top: 2rem;
     }
     .detail .col{
-        height:300px;
-        width:250px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        margin-left:.5rem;
-        margin-right:.5rem;
-        margin-top:8.5rem;
+        margin-bottom: 2rem;
     }
-    .detail .col img{
-        width:5rem;
-        height:5rem;
-        margin-top:2.25rem;
-        margin-right:1.5rem;
-        margin-bottom:1.5rem;
+    /* .column1 img{
+        width: 5rem;
     }
-    .detail .col .percent{
-        font-size: 2.5rem;
-        font-weight: 600;
+    .column1 .percent{
+        font-size: 1.5rem;
+        font-weight: 500;
     }
-    .detail .col .name{
-        font-size:1.5rem;
-        font-weight:500;
-    }
-}
-@media screen and (max-width:568px){
-    .card{
-        height:100vh;
-        width:100%;    
-        background: linear-gradient(135deg, #00feba, #5b548a);
-        margin-top: 0;
-        border-radius:0;
-        color:white;
-        text-align:center;
-        
-    }
-    #serch{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin:1rem 1rem 1rem 1rem;
-        
-    }
-    .search input{
-        width:75%;
-        height:40px;
-        border:none;
-        outline:0;
-        border-radius: 2rem;
-        padding:1rem;
-        font-size: 2rem;
-    }
-    .search button{
-        width:70px;
-        height:70px;
-        border:none;
-        border-radius: 50%;
-        margin-right:.75rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .search button img{
-        width:1.5rem;
-    }
-    .wheather img{
-        width:200px;
-    }
-    .wheather h1{
-        font-size:2.75rem;
-    }
-    .wheather h2{
-        font-size:1.75rem;
-    }
-    .detail .col{
-        height:150px;
-        width:160px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        margin-left:.5rem;
-        margin-right:.5rem;
-        margin-top:5.25rem;
-    }
-    .detail .col img{
-        width:2.5rem;
-        height:2.5rem;
-        margin-top:2.25rem;
-        margin-right:.75rem;
-        margin-bottom:1.75rem;
-    }
-    .detail .col .percent{
-        font-size:1.5rem;
-        font-weight: 600;
-    }
-    .detail .col .name{
+    .column1 .name{
         font-size:.75rem;
         font-weight:500;
-    }
+    } */
 }
-@media screen and (max-width:420){
-    .card{
-        height:100vh;
-        width:100%;    
-        background: linear-gradient(135deg, #00feba, #5b548a);
-        margin-top: 0;
-        border-radius:0;
-        color:white;
-        text-align:center;
-        
-    }
-    #serch{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin:1rem 1rem 1rem 1rem;
-        
-    }
-    .search input{
-        width: 200px;
-        height:40px;
-        border:none;
-        outline:0;
-        border-radius: 2rem;
-        padding:1rem;
-        font-size: 2rem;
-    }
-    .search button{
-        width:70px;
-        height:70px;
-        border:none;
-        border-radius: 50%;
-        margin-right:.75rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .search button img{
-        width:1.5rem;
-    }
-    .wheather img{
-        width:200px;
-    }
-    .wheather h1{
-        font-size:2.75rem;
-    }
-    .wheather h2{
-        font-size:1.75rem;
-    }
-    .detail .col{
-        height:150px;
-        width:160px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        margin-left:.5rem;
-        margin-right:.5rem;
-        margin-top:5.25rem;
-    }
-    .detail .col img{
-        width:2.5rem;
-        height:2.5rem;
-        margin-top:2.25rem;
-        margin-right:.75rem;
-        margin-bottom:1.75rem;
-    }
-    .detail .col .percent{
-        font-size:1.5rem;
-        font-weight: 600;
-    }
-    .detail .col .name{
-        font-size:.75rem;
-        font-weight:500;
-    }
-} */
